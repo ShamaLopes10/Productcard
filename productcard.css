@@ -1,0 +1,97 @@
+
+    /* Reset CSS */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Optional CSS to customize the card */
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .product-card .product-info {
+      padding: 20px;
+    }
+
+    .product-card h5 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .product-card .btn {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product-card .btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media (min-width: 576px) {
+      .product-card {
+        display: inline-block;
+        width: calc(50% - 20px);
+        margin-right: 20px;
+      }
+
+      .product-card:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .product-card {
+        width: calc(33.33% - 20px);
+      }
+
+      .product-card:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .product-card {
+        width: calc(25% - 20px);
+      }
+
+      .product-card:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+ 
